@@ -4,6 +4,8 @@
  */
 package br.edu.imepac;
 
+import br.edu.imepac.prontuarios.Prontuarios;
+
 /**
  *
  * @author 241-002449
