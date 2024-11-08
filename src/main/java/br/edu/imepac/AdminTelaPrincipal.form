@@ -26,13 +26,13 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jButtonPacientes" max="32767" attributes="0"/>
+                  <Component id="Paciente" max="32767" attributes="0"/>
                   <Component id="jButtonPacientes1" pref="172" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                   <Component id="Prontuarios" max="32767" attributes="0"/>
-                  <Component id="jButtonConsultas" max="32767" attributes="0"/>
+                  <Component id="Consultas" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
           </Group>
@@ -50,8 +50,8 @@
               <Component id="jLabelAdministracao" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButtonPacientes" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
-                  <Component id="jButtonConsultas" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
+                  <Component id="Paciente" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
+                  <Component id="Consultas" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="35" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -72,21 +72,27 @@
         <Property name="text" type="java.lang.String" value="PAINEL DE ADMINISTRA&#xc7;&#xc3;O"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButtonPacientes">
+    <Component class="javax.swing.JButton" name="Paciente">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="12" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="GERENCIAR PACIENTES"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PacienteActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButtonConsultas">
+    <Component class="javax.swing.JButton" name="Consultas">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="12" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="GERENCIAR CONSULTAS"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ConsultasActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Prontuarios">
       <Properties>
@@ -105,7 +111,6 @@
           <Font name="Arial" size="12" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="VERIFICAR CONSULTAS"/>
-        <Property name="actionCommand" type="java.lang.String" value="VERIFICAR CONSULTAS"/>
       </Properties>
     </Component>
   </SubComponents>

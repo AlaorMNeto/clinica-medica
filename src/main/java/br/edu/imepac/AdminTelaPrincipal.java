@@ -4,6 +4,8 @@
  */
 package br.edu.imepac;
 
+import br.edu.imepac.consulta.TelaConsulta;
+import br.edu.imepac.paciente.TelaPaciente;
 import br.edu.imepac.prontuarios.Prontuarios;
 
 /**
@@ -29,8 +31,8 @@ public class AdminTelaPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabelAdministracao = new javax.swing.JLabel();
-        jButtonPacientes = new javax.swing.JButton();
-        jButtonConsultas = new javax.swing.JButton();
+        Paciente = new javax.swing.JButton();
+        Consultas = new javax.swing.JButton();
         Prontuarios = new javax.swing.JButton();
         jButtonPacientes1 = new javax.swing.JButton();
 
@@ -39,11 +41,21 @@ public class AdminTelaPrincipal extends javax.swing.JFrame {
         jLabelAdministracao.setFont(new java.awt.Font("Arial", 1, 22)); // NOI18N
         jLabelAdministracao.setText("PAINEL DE ADMINISTRAÇÃO");
 
-        jButtonPacientes.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jButtonPacientes.setText("GERENCIAR PACIENTES");
+        Paciente.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        Paciente.setText("GERENCIAR PACIENTES");
+        Paciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PacienteActionPerformed(evt);
+            }
+        });
 
-        jButtonConsultas.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jButtonConsultas.setText("GERENCIAR CONSULTAS");
+        Consultas.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        Consultas.setText("GERENCIAR CONSULTAS");
+        Consultas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ConsultasActionPerformed(evt);
+            }
+        });
 
         Prontuarios.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         Prontuarios.setText("GERENCIAR PRONTUÁRIOS");
@@ -55,7 +67,6 @@ public class AdminTelaPrincipal extends javax.swing.JFrame {
 
         jButtonPacientes1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jButtonPacientes1.setText("VERIFICAR CONSULTAS");
-        jButtonPacientes1.setActionCommand("VERIFICAR CONSULTAS");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -64,12 +75,12 @@ public class AdminTelaPrincipal extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButtonPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Paciente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButtonPacientes1, javax.swing.GroupLayout.DEFAULT_SIZE, 172, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(Prontuarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButtonConsultas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Consultas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(28, 28, 28))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(118, Short.MAX_VALUE)
@@ -83,8 +94,8 @@ public class AdminTelaPrincipal extends javax.swing.JFrame {
                 .addComponent(jLabelAdministracao)
                 .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Paciente, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Consultas, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Prontuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -99,6 +110,16 @@ public class AdminTelaPrincipal extends javax.swing.JFrame {
         Prontuarios objela1 = new Prontuarios ();
         objela1.setVisible(true);
     }//GEN-LAST:event_ProntuariosActionPerformed
+
+    private void PacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PacienteActionPerformed
+    TelaPaciente objela1 = new TelaPaciente ();
+    objela1.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_PacienteActionPerformed
+
+    private void ConsultasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConsultasActionPerformed
+    TelaConsulta objela1 = new TelaConsulta ();
+    objela1.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_ConsultasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -137,9 +158,9 @@ public class AdminTelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Consultas;
+    private javax.swing.JButton Paciente;
     private javax.swing.JButton Prontuarios;
-    private javax.swing.JButton jButtonConsultas;
-    private javax.swing.JButton jButtonPacientes;
     private javax.swing.JButton jButtonPacientes1;
     private javax.swing.JLabel jLabelAdministracao;
     // End of variables declaration//GEN-END:variables
