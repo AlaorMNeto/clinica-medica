@@ -38,7 +38,7 @@ public class frmprincipal extends javax.swing.JFrame {
         jLabel1.setBackground(new java.awt.Color(51, 255, 102));
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel1.setText("VIZUALIZAR CONSULTAS");
+        jLabel1.setText("VISUALIZAR CONSULTAS");
 
         btnTela1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnTela1.setForeground(new java.awt.Color(51, 51, 51));
