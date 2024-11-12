@@ -27,7 +27,7 @@
               <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="Paciente" max="32767" attributes="0"/>
-                  <Component id="jButtonPacientes1" pref="172" max="32767" attributes="0"/>
+                  <Component id="VerificarConsulta" pref="172" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="1" max="-2" attributes="0">
@@ -56,7 +56,7 @@
               <EmptySpace pref="35" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="Prontuarios" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
-                  <Component id="jButtonPacientes1" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
+                  <Component id="VerificarConsulta" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
           </Group>
@@ -105,13 +105,16 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ProntuariosActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButtonPacientes1">
+    <Component class="javax.swing.JButton" name="VerificarConsulta">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="12" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="VERIFICAR CONSULTAS"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VerificarConsultaActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

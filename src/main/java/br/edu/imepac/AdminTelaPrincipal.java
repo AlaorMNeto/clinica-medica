@@ -4,6 +4,7 @@
  */
 package br.edu.imepac;
 
+import br.edu.imepac.Telaconsulta.frmprincipal;
 import br.edu.imepac.consulta.TelaConsulta;
 import br.edu.imepac.paciente.TelaPaciente;
 import br.edu.imepac.prontuarios.Prontuarios;
@@ -34,7 +35,7 @@ public class AdminTelaPrincipal extends javax.swing.JFrame {
         Paciente = new javax.swing.JButton();
         Consultas = new javax.swing.JButton();
         Prontuarios = new javax.swing.JButton();
-        jButtonPacientes1 = new javax.swing.JButton();
+        VerificarConsulta = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -65,8 +66,13 @@ public class AdminTelaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonPacientes1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jButtonPacientes1.setText("VERIFICAR CONSULTAS");
+        VerificarConsulta.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        VerificarConsulta.setText("VERIFICAR CONSULTAS");
+        VerificarConsulta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VerificarConsultaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -76,7 +82,7 @@ public class AdminTelaPrincipal extends javax.swing.JFrame {
                 .addGap(23, 23, 23)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Paciente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButtonPacientes1, javax.swing.GroupLayout.DEFAULT_SIZE, 172, Short.MAX_VALUE))
+                    .addComponent(VerificarConsulta, javax.swing.GroupLayout.DEFAULT_SIZE, 172, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(Prontuarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -99,7 +105,7 @@ public class AdminTelaPrincipal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Prontuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonPacientes1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(VerificarConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(43, 43, 43))
         );
 
@@ -120,6 +126,11 @@ public class AdminTelaPrincipal extends javax.swing.JFrame {
     TelaConsulta objela1 = new TelaConsulta ();
     objela1.setVisible(true);// TODO add your handling code here:
     }//GEN-LAST:event_ConsultasActionPerformed
+
+    private void VerificarConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerificarConsultaActionPerformed
+    frmprincipal objela1 = new frmprincipal ();
+    objela1.setVisible(true);  // TODO add your handling code here:
+    }//GEN-LAST:event_VerificarConsultaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -161,7 +172,7 @@ public class AdminTelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton Consultas;
     private javax.swing.JButton Paciente;
     private javax.swing.JButton Prontuarios;
-    private javax.swing.JButton jButtonPacientes1;
+    private javax.swing.JButton VerificarConsulta;
     private javax.swing.JLabel jLabelAdministracao;
     // End of variables declaration//GEN-END:variables
 }
